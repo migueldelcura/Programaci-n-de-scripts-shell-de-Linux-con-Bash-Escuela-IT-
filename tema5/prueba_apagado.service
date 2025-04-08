@@ -1,0 +1,13 @@
+[Unit]
+Description="Script a para copias de seguridad en el apagado"
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+#Copiaremos antes de apagar
+ExecStop=ls /home/jefe/curso >> /home/jefe/listado_final.log
+
+[Install]
+WantedBy=multi-user.target

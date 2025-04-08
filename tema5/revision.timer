@@ -1,0 +1,9 @@
+[Unit]
+Description="Para avisar de si pasa algo con syslog, cada hora"
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=6min
+
+[Install]
+WantedBy=timers.target

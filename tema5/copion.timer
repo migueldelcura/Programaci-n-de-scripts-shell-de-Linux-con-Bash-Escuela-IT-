@@ -1,0 +1,10 @@
+
+[Unit]
+Description="Script para copias y eliminación 1 vez al día y al arrancar"
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=1d
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,15 @@
+[Unit]
+Description="Script a para copias de seguridad en el apagado"
+After=network.target network-online.target
+Wants=network-online.target
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+#Copiaremos antes de apagar
+ExecStop=/home/jefe/curso/tar_back.sh
+
+[Install]
+WantedBy=multi-user.target

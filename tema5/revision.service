@@ -1,0 +1,6 @@
+[Unit]
+Description="Script para revisar el registro syslog"
+
+[Service]
+Type=oneshot
+ExecStart=/home/jefe/scripts/revisar.sh

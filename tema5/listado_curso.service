@@ -1,0 +1,7 @@
+[Unit]
+Description="Script para listar contenido de curso"
+#El momento de ejecución ya no se decide aquí, lo hace el timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/jefe/scripts/listar.sh

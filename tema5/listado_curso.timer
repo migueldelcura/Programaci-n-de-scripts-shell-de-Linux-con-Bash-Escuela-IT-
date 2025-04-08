@@ -1,0 +1,9 @@
+[Unit]
+Description="Para hacer listado de curso cada 20min"
+
+[Timer]
+OnCalendar=*:0/20
+
+[Install]
+WantedBy=timers.target
+

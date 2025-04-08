@@ -1,0 +1,16 @@
+10_for_copias.sh
+11_break_continue.sh
+12_while_copias.sh
+13_until_finito.sh
+14_while_destinos.sh
+15_until_carpetas.sh
+16_copia_lista.sh
+1_mi_script.sh
+2_ejemplo.sh
+3_sumar.sh
+4_dos_sitios.sh
+5_if_borrar.sh
+6_enlace.sh
+7_if_extension.sh
+8_if_clave.sh
+9_casos.sh

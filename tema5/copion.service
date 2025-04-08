@@ -1,0 +1,6 @@
+[Unit]
+Description="Script para copias y eliminación de las antiguas"
+
+[Service]
+Type=oneshot
+ExecStart=/home/jefe/scripts/copi_total.sh

@@ -1,0 +1,11 @@
+[Unit]
+Description="Script para salvar el disco ram si escasea memoria"
+Wants=network.target
+After=network-online.target mount.target 
+
+[Service]
+Type=simple
+ExecStart=/home/jefe/scripts/liberar_ram.sh
+
+[Install]
+WantedBy=multi-user.target

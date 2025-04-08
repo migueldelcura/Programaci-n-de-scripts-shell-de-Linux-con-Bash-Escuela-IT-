@@ -1,0 +1,13 @@
+[Unit]
+Description="Unidad para salvar el disco ram en el apagado"
+Wants=network.target
+Before=unmount.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=/home/jefe/scripts/liberar_ram.sh
+
+[Install]
+WantedBy=shutdown.target

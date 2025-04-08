@@ -1,0 +1,10 @@
+[Unit]
+Description="Script de ping al servidor"
+After=network-online.target 
+
+[Service]
+Type=simple   
+ExecStart=/home/jefe/scripts/ping_cont.sh
+
+[Install]
+WantedBy=multi-user.target  
